@@ -1,5 +1,7 @@
 citHeader("To cite the urca package in publications use:")
 
+citFooter("For BibTex versions of citations use: toBibtex(citation('urca'))")
+
 citEntry(entry="Book",
          title = "Analysis of Integrated and Cointegrated Time Series with R",
          author = personList(as.person("B. Pfaff")),
