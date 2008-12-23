@@ -1,3 +1,9 @@
+2008-12-23    Dr. Bernhard Pfaff  <bp@callisto>
+
+	* man/MacKinnonPValues.Rd: Inclusion of Mackinnon functions from fUnitRoots.
+	* R/MacKinnonPValues.R: Inclusion of functions from fUnitRoots.
+	* src/UnitRootMacKinnon.f (fcrit): Inclusion of FORTRAN routines.
+
 2008-11-27    Dr. Bernhard Pfaff  <bp@callisto>
 
 	* R/methods-show.R (show.urca): Fixed invisible(x) to
