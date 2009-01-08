@@ -36,29 +36,23 @@ Content-Transfer-Encoding: QUOTED-PRINTABLE
 On Fri, 14 Nov 2008, Matthieu Stigler wrote:
 
 > mat@cunix:~/Repertoires/urcdist$ f77  -O urcrouts.f -o urcrout
-> /usr/lib/gcc/i486-linux-gnu/3.4.6/../../../../lib/libfrtbegin.a(frtbegin.=
-o):=20
+> /usr/lib/gcc/i486-linux-gnu/3.4.6/../../../../lib/libfrtbegin.a(frtbegin.o):
 > In function `main':
 > (.text+0x35): undefined reference to `MAIN__'
 > collect2: ld a retourn=E9 1 code d'=E9tat d'ex=E9cution
 
-The problem is simply that urcrouts.f contains no main program. Either add=
-=20
-a main program that calls one or more routines from urcrouts.f (you will=20
-need this anyway), or compile with the -c switch (instead of -o urcrout).=
-=20
+The problem is simply that urcrouts.f contains no main program. Either add
+a main program that calls one or more routines from urcrouts.f (you will
+need this anyway), or compile with the -c switch (instead of -o urcrout).
 This will create urcrouts.o, but it won't be any use without a main=20
 program.
 
-> Furthermore, I contributed some functions for the R program and would be=
-=20
-> interested to try to integrate your functions for the package devoted to=
-=20
+> Furthermore, I contributed some functions for the R program and would be
+> interested to try to integrate your functions for the package devoted to
 > unit root tests (urca). Do you agree that your code will be used in a R
 > package under the GPL license?
 
-That would be fine with me. But I would want to make sure the R code works=
-=20
+That would be fine with me. But I would want to make sure the R code works
 properly and provides appropriate citations before you make it available.
 
 Cheers,
