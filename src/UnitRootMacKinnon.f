@@ -1,7 +1,7 @@
 
 
 c Copyright (c) James G. MacKinnon, 1996 (corrected 2001-1-8)
-c
+c 
 c urcrouts.f: This is a set of subroutines to estimate critical values
 c and P values for unit root and cointegration tests. It is written in
 c Fortran 77. Simply call urcval, specifying the first seven arguments.
@@ -28,6 +28,83 @@ c that lines are terminated by CR/LF for DOS, Windows, and OS/2 systems
 c and by LF alone for Unix systems).
 c
 
+c Author authorisation to use under GPL license:
+
+c From - Sat Nov 15 11:56:30 2008
+cX-Mozilla-Status: 0001
+cX-Mozilla-Status2: 00000000
+cDelivered-To: matthieu.stigler@gmail.com
+cReceived: by 10.100.110.6 with SMTP id i6cs31074anc;
+c        Fri, 14 Nov 2008 18:53:21 -0800 (PST)
+cReceived: by 10.65.23.5 with SMTP id a5mr1662842qbj.30.1226717600830;
+c        Fri, 14 Nov 2008 18:53:20 -0800 (PST)
+cReturn-Path: <jgm@jgm.econ.queensu.ca>
+cReceived: from jgm.econ.queensu.ca (JGM.econ.QueensU.CA [130.15.74.85])
+c        by mx.google.com with ESMTP id p9si2368721qbp.15.2008.11.14.18.53.20;
+c        Fri, 14 Nov 2008 18:53:20 -0800 (PST)
+cReceived-SPF: pass (google.com: best guess record for domain of jgm@jgm.econ.queensu.ca designates 130.15.74.85 as permitted sender) client-ip=130.15.74.85;
+cAuthentication-Results: mx.google.com; spf=pass (google.com: best guess record for domain of jgm@jgm.econ.queensu.ca designates 130.15.74.85 as permitted sender) smtp.mail=jgm@jgm.econ.queensu.ca
+cReceived: from jgm by jgm.econ.queensu.ca with local (Exim 4.63)
+c	(envelope-from <jgm@jgm.econ.queensu.ca>)
+c	id 1L1BHk-00018U-3o
+c	for matthieu.stigler@gmail.com; Fri, 14 Nov 2008 21:53:20 -0500
+cDate: Fri, 14 Nov 2008 21:53:20 -0500 (EST)
+cFrom: James MacKinnon <jgm@econ.queensu.ca>
+cTo: Matthieu Stigler <matthieu.stigler@gmail.com>
+cSubject: Re: Program for surface response function
+cIn-Reply-To: <491D8DF3.20907@gmail.com>
+cMessage-ID: <Pine.LNX.4.62.0811142148490.4293@jgm.econ.queensu.ca>
+cReferences: <491D8DF3.20907@gmail.com>
+cMIME-Version: 1.0
+cContent-Type: MULTIPART/MIXED; BOUNDARY="260199754-1936399293-1226717600=:4293"
+c
+c  This message is in MIME format.  The first part should be readable text,
+c  while the remaining parts are likely unreadable without MIME-aware tools.
+c
+c--260199754-1936399293-1226717600=:4293
+cContent-Type: TEXT/PLAIN; charset=ISO-8859-1; format=flowed
+cContent-Transfer-Encoding: QUOTED-PRINTABLE
+c
+cOn Fri, 14 Nov 2008, Matthieu Stigler wrote:
+c
+c> mat@cunix:~/Repertoires/urcdist$ f77  -O urcrouts.f -o urcrout
+c> /usr/lib/gcc/i486-linux-gnu/3.4.6/../../../../lib/libfrtbegin.a(frtbegin.=
+co):=20
+c> In function `main':
+c> (.text+0x35): undefined reference to `MAIN__'
+c> collect2: ld a retourn=E9 1 code d'=E9tat d'ex=E9cution
+c
+cThe problem is simply that urcrouts.f contains no main program. Either add=
+c=20
+ca main program that calls one or more routines from urcrouts.f (you will=20
+cneed this anyway), or compile with the -c switch (instead of -o urcrout).=
+c=20
+cThis will create urcrouts.o, but it won't be any use without a main=20
+cprogram.
+c
+c> Furthermore, I contributed some functions for the R program and would be=
+c=20
+c> interested to try to integrate your functions for the package devoted to=
+c=20
+c> unit root tests (urca). Do you agree that your code will be used in a R
+c> package under the GPL license?
+c
+cThat would be fine with me. But I would want to make sure the R code works=
+c=20
+cproperly and provides appropriate citations before you make it available.
+c
+cCheers,
+c
+cJames G. MacKinnon
+cHead, Department of Economics
+cQueen's University
+cKingston, Ontario, Canada
+cK7L 3N6
+c
+cEmail: jgm@econ.queensu.ca
+cPhone: 613 533-2293
+cFax:   613 533-6668
+c--260199754-1936399293-1226717600=:4293--
 
 C ******************************************************************************
 
