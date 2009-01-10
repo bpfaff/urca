@@ -6,6 +6,7 @@
 \alias{qunitroot}
 \alias{unitrootTable}
 
+\encoding{latin1}
 
 \title{MacKinnon's Unit Root p Values}
 

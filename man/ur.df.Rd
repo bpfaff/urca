@@ -1,12 +1,13 @@
 \name{ur.df}
 \alias{ur.df}
+\encoding{latin1}
 \title{Augmented-Dickey-Fuller Unit Root Test}
 \description{
   Performs the augmented Dickey-Fuller unit root test. 
 }
 \usage{
 ur.df(y, type = c("none", "drift", "trend"), lags = 1,
-      selectlags=c("Fixed", "AIC", "BIC")) 
+      selectlags = c("Fixed", "AIC", "BIC")) 
 }
 \arguments{
   \item{y}{Vector to be tested for a unit root.}
@@ -28,7 +29,7 @@ ur.df(y, type = c("none", "drift", "trend"), lags = 1,
     (1994) and Dickey and Fuller(1981).
   }
 \value{
-  An object of class \code{`ur.df'}.
+  An object of class \code{ur.df}.
 }
 \references{
   Dickey, D. A. and Fuller, W. A. (1979), Distributions of the
