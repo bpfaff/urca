@@ -1,6 +1,6 @@
 Package: urca
 Version: 1.2-6
-Date: 2011-08-01
+Date: 2011-11-27
 Title: Unit root and cointegration tests for time series data
 Author: Bernhard Pfaff <bernhard.pfaff@pfaffikus.de>
 Maintainer: Bernhard Pfaff <bernhard@pfaffikus.de>
