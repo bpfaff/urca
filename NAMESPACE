@@ -1,5 +1,6 @@
 ##
 import(methods)
+import(nlme)
 
 ##
 useDynLib(urca)
