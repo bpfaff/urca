@@ -1,8 +1,8 @@
 Package: urca
-Version: 1.2-8
-Date: 2013-06-05
+Version: 1.2-9
+Date: 2014-05-17
 Title: Unit root and cointegration tests for time series data
-Authors@R: c(person("Bernhard", "Pfaff", email = "bernhard@pfaffikus.de", role = c("aut", "cre")), person("Matthieu", "Stigler", role = "ctb"))
+Authors@R: c(person("Bernhard", "Pfaff", email = "bernhard@pfaffikus.de", role = c("aut", "cre")), person("Eric", "Zivot",email = "ezivot@u.washington.edu", role = "ctb"), person("Matthieu", "Stigler", role = "ctb"))
 Depends: R (>= 2.0.0), methods
 Imports: nlme, graphics, stats
 LazyLoad: yes
