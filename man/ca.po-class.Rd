@@ -36,7 +36,7 @@ Class \code{urca}, directly.
 \section{Methods}{
   Type \code{showMethods(classes="ca.po")} at the R prompt for a
   complete list of methods which are available for this class.
-  
+
   Useful methods include
   \describe{
     \item{\code{show}:}{test statistic.}
@@ -50,9 +50,9 @@ Class \code{urca}, directly.
   Residual Based Tests for Cointegration, \emph{Econometrica},
   \bold{Vol. 58, No. 1}, 165--193.
 }
-  
+
 \seealso{
-  \code{\link{ca.po}} and \code{\link{urca-class}}. 
+  \code{\link{ca.po}} and \code{\link{urca-class}}.
 }
 \author{Bernhard Pfaff}
 \keyword{classes}

@@ -1,4 +1,3 @@
-
 setMethod("plot", signature(x="ur.ers", y="missing"), function(x){
   if(is.null(x@testreg)){
     stop("No plot method for P-test available")}
@@ -67,7 +66,7 @@ setMethod("plot", signature(x="ca.po", y="missing"), function(x){
         readline()
       }
     }
-  }     
+  }
 })
 
 setMethod("plot", signature(x="ur.pp", y="missing"), function(x){
@@ -121,4 +120,4 @@ setMethod("plot", signature(x="ur.za", y="missing"), function(x){
   mtext(paste("Model type:", x@model, sep=" "), side=1, line=4)
   legend(x=n, y=max(yvals), c("1% c.v.", "2.5% c.v.", "5% c.v."), col=c("red", "blue", "seagreen"), xjust=1, yjust=1, lty=1, horiz=TRUE, cex=0.66, bty="n")
 })
-  
+

@@ -42,5 +42,5 @@ ur.kpss <- function(y, type=c("mu", "tau"), lags=c("short", "long", "nil"), use.
     denominator <- s2 + 2/n*t(bartlett)%*%x.cov
   }
   teststat <- nominator/denominator
-  new("ur.kpss", y=y, type=type, lag=as.integer(lmax), teststat=as.numeric(teststat), cval=cval, res=res , test.name="KPSS") 
+  new("ur.kpss", y=y, type=type, lag=as.integer(lmax), teststat=as.numeric(teststat), cval=cval, res=res , test.name="KPSS")
 }

@@ -122,7 +122,7 @@ setClass("ur.za", representation(y="vector",
                                  testreg="ANY"),
          contains="urca")
 
-setClassUnion("otherornull", c("ANY", "character", "integer", "matrix", "vector", "NULL")) 
+setClassUnion("otherornull", c("ANY", "character", "integer", "matrix", "vector", "NULL"))
 
 setClass("sumurca", representation(classname="character",
                                    test.name="character",

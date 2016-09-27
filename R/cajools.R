@@ -21,5 +21,5 @@ cajools <- function(z, reg.number=NULL)
   } else if (is.null(reg.number)) {
     form1 <- formula(paste("z@Z0", text2, "-1"))
     return(lm(substitute(form1), data=data.mat))
-  } 
+  }
 }

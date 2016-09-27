@@ -1,4 +1,4 @@
-\name{Raotbl2} 
+\name{Raotbl2}
 \alias{Raotbl2}
 \docType{data}
 \encoding{latin1}
@@ -6,14 +6,14 @@
 \description{
   This data set contains the time series used by David A. Dickey, Dennis
   W. Jansen and Daniel L. Thornton in their article: ``A Primer on
-  Cointegrating with an Application to Money and Income''. 
+  Cointegrating with an Application to Money and Income''.
 }
 \usage{data(Raotbl2)}
 \format{
   A data frame with quarterly oberservations (ts objects) starting in
   1953:1 until 1988:4 for the following 4 variables (all transformed to
   natural logarithms.
-  
+
     \tabular{rl}{
     \code{m1p} \tab Real money balances M1. \cr
     \code{m2p} \tab Real money balances M2. \cr

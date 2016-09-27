@@ -1,6 +1,6 @@
 
 setMethod("summary", "ur.ers", function(object){
-  return(new("sumurca", classname="ur.ers", test.name=object@test.name, testreg=object@testreg, teststat=object@teststat, cval=object@cval, bpoint=NULL, signif=NULL, model=object@model, type=object@type, auxstat=NULL, lag=NULL, H=NULL, A=NULL, lambda=NULL, pval=NULL, V=NULL, W=NULL, P=NULL))  
+  return(new("sumurca", classname="ur.ers", test.name=object@test.name, testreg=object@testreg, teststat=object@teststat, cval=object@cval, bpoint=NULL, signif=NULL, model=object@model, type=object@type, auxstat=NULL, lag=NULL, H=NULL, A=NULL, lambda=NULL, pval=NULL, V=NULL, W=NULL, P=NULL))
 })
 
 setMethod("summary", "ca.jo", function(object){

@@ -12,7 +12,7 @@
   A data frame containing fourteen series.
 
   \tabular{rl}{
-    \code{year} \tab Time index from 1860 until 1970. \cr 
+    \code{year} \tab Time index from 1860 until 1970. \cr
     \code{gnp.r} \tab Real GNP, \cr
     \tab [Billions of 1958 Dollars], [1909 -- 1970] \cr
     \code{gnp.n} \tab Nominal GNP, \cr

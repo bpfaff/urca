@@ -31,7 +31,7 @@ Class \code{urca}, directly.
 \section{Methods}{
   Type \code{showMethods(classes="ur.kpss")} at the R prompt for a
   complete list of methods which are available for this class.
-  
+
   Useful methods include
   \describe{
     \item{\code{show}:}{test statistic.}

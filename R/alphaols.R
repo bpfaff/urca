@@ -1,7 +1,7 @@
 ##
 ## alphaols
 ##
-alphaols <- function(z, reg.number = NULL) 
+alphaols <- function(z, reg.number = NULL)
 {
   if (!(class(z) == "ca.jo")) {
     stop("\nPlease, provide object of class 'ca.jo' as 'z'.\n")

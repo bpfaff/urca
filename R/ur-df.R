@@ -1,17 +1,17 @@
 ##
 ## Augmented-Dickey-Fuller Test
 ##
-ur.df <- function (y, type = c("none", "drift", "trend"), lags = 1, selectlags = c("Fixed", "AIC", "BIC")) 
+ur.df <- function (y, type = c("none", "drift", "trend"), lags = 1, selectlags = c("Fixed", "AIC", "BIC"))
 {
     selectlags<-match.arg(selectlags)
     type <- match.arg(type)
-    if (ncol(as.matrix(y)) > 1) 
+    if (ncol(as.matrix(y)) > 1)
         stop("\ny is not a vector or univariate time series.\n")
-    if (any(is.na(y))) 
+    if (any(is.na(y)))
         stop("\nNAs in y.\n")
     y <- as.vector(y)
     lag <- as.integer(lags)
-    if (lag < 0) 
+    if (lag < 0)
         stop("\nLags must be set to an non negative integer value.\n")
     CALL <- match.call()
     DNAME <- deparse(substitute(y))
@@ -28,11 +28,11 @@ ur.df <- function (y, type = c("none", "drift", "trend"), lags = 1, selectlags =
       critRes<-rep(NA, lags)
       for(i in 2:(lags)){
           z.diff.lag = x[, 2:i]
-	  if (type == "none") 
+	  if (type == "none")
             result <- lm(z.diff ~ z.lag.1 - 1 + z.diff.lag)
-	  if (type == "drift") 
-            result <- lm(z.diff ~ z.lag.1 + 1 + z.diff.lag)  
-	  if (type == "trend") 
+	  if (type == "drift")
+            result <- lm(z.diff ~ z.lag.1 + 1 + z.diff.lag)
+	  if (type == "trend")
             result <- lm(z.diff ~ z.lag.1 + 1 + tt + z.diff.lag)
 	  critRes[i]<-AIC(result, k = switch(selectlags, "AIC" = 2, "BIC" = log(length(z.diff))))
 	}
@@ -105,7 +105,7 @@ ur.df <- function (y, type = c("none", "drift", "trend"), lags = 1, selectlags =
       rowselec <- 5
     if(n >= 500)
       rowselec <- 6
-    if (type == "none"){ 
+    if (type == "none"){
         cval.tau1 <- rbind(
                            c(-2.66, -1.95, -1.60),
                            c(-2.62, -1.95, -1.61),
@@ -116,7 +116,7 @@ ur.df <- function (y, type = c("none", "drift", "trend"), lags = 1, selectlags =
         cvals <- t(cval.tau1[rowselec, ])
         testnames <- 'tau1'
       }
-    if (type == "drift"){ 
+    if (type == "drift"){
         cval.tau2 <- rbind(
                            c(-3.75, -3.00, -2.63),
                            c(-3.58, -2.93, -2.60),
@@ -136,7 +136,7 @@ ur.df <- function (y, type = c("none", "drift", "trend"), lags = 1, selectlags =
                       cval.phi1[rowselec, ])
         testnames <- c('tau2', 'phi1')
       }
-    if (type == "trend"){ 
+    if (type == "trend"){
         cval.tau3 <- rbind(
                            c(-4.38, -3.60, -3.24),
                            c(-4.15, -3.50, -3.18),
@@ -157,7 +157,7 @@ ur.df <- function (y, type = c("none", "drift", "trend"), lags = 1, selectlags =
                            c( 8.73, 6.49, 5.47),
                            c( 8.43, 6.49, 5.47),
                            c( 8.34, 6.30, 5.36),
-                           c( 8.27, 6.25, 5.34))  
+                           c( 8.27, 6.25, 5.34))
         cvals <- rbind(
                       cval.tau3[rowselec, ],
                       cval.phi2[rowselec, ],
@@ -167,6 +167,6 @@ ur.df <- function (y, type = c("none", "drift", "trend"), lags = 1, selectlags =
       }
     colnames(cvals) <- c("1pct", "5pct", "10pct")
     rownames(cvals) <- testnames
-   
+
     new("ur.df", y = y, model = type, cval=cvals, lags=lag, teststat = teststat, testreg=testreg, res=res, test.name="Augmented Dickey-Fuller Test")
 }

@@ -35,7 +35,7 @@ Class \code{urca}, directly.
 \section{Methods}{
   Type \code{showMethods(classes="ur.sp")} at the R prompt for a
   complete list of methods which are available for this class.
-  
+
   Useful methods include
   \describe{
     \item{\code{show}:}{test statistic.}
@@ -54,7 +54,7 @@ Class \code{urca}, directly.
   'Discussion Papers (CFDPs)'.
 }
 \seealso{
-  \code{\link{ur.sp}} and \code{\link{urca-class}}. 
+  \code{\link{ur.sp}} and \code{\link{urca-class}}.
 }
 \author{Bernhard Pfaff}
 \keyword{classes}

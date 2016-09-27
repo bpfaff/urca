@@ -12,7 +12,7 @@
 \format{
   A data frame of quarterly \code{ts} objects ranging from 1957:Q1
   until 1975:Q4.
- 
+
 
     \tabular{rl}{
     \code{cons} \tab Consumers` non-durable expenditure in the U.K. in

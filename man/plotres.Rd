@@ -19,7 +19,7 @@ plotres(x)
   Inference on Cointegration -- with Applications to the Demand for
   Money, \emph{Oxford Bulletin of Economics and Statistics}, \bold{52,
     2}, 169--210.
-  
+
 }
 \seealso{
   \code{\link{ca.jo}} and \code{\link{ca.jo-class}}.

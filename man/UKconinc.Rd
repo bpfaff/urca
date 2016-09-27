@@ -12,7 +12,7 @@
 \format{
   A data frame of quarterly data ranging from 1955:Q1
   until 1984:Q4. The data is expressed in natural logarithms.
- 
+
 
     \tabular{rl}{
     \code{consl} \tab The log of total real consumption in the U.K. \cr
@@ -27,7 +27,7 @@
 Hylleberg, S., R. F. Engle, C. W. J. Granger and B. S. Yoo (1990),
 Seasonal Integration and Cointegration, \emph{Journal of econometrics},
 \bold{44}, 215--238.}
- 
+
 \author{Bernhard Pfaff}
 \keyword{datasets}
 \concept{data set UK consumption income HEGY}

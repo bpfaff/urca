@@ -19,7 +19,7 @@
 \section{Methods}{\describe{
     \item{object = "ur.df"}{The test type, its statistic, the test
       regression and the critical values for the Augmented Dickey and
-      Fuller test are returned.}  
+      Fuller test are returned.}
     \item{object = "ur.ers"}{The test type, its statistic and the
       critical values for the Elliott, Rothenberg \& Stock test are
       returned. In case of test \code{"DF-GLS"} the summary output
@@ -35,7 +35,7 @@
       with respect to \eqn{\bold{\alpha}} and/or \eqn{\bold{\beta}} with
       p-value and degrees of freedom is reported. Furthermore, the
       restriction matrix(ces), the eigenvalues and eigenvectors as well
-      as the loading matrix are returned.}  
+      as the loading matrix are returned.}
     \item{object = "ca.po"}{The \code{"Pz"} or \code{"Pu"} statistic,
       the critical values as well as the summary output of the test
       regression for the Phillips \& Ouliaris cointegration test.}

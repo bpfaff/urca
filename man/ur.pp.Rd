@@ -20,7 +20,7 @@ ur.pp(x, type = c("Z-alpha", "Z-tau"), model = c("constant", "trend"),
 }
 \details{
   The function \code{ur.pp()} computes the Phillips \& Perron test. For
-  correction of the error term a Bartlett window is used. 
+  correction of the error term a Bartlett window is used.
 }
 \value{
   An object of class \code{ur.pp}.
@@ -32,7 +32,7 @@ ur.pp(x, type = c("Z-alpha", "Z-tau"), model = c("constant", "trend"),
   MacKinnon, J.G. (1991), Critical Values for Cointegration Tests,
   \emph{Long-Run Economic Relationships}, eds. R.F. Engle and
   C.W.J. Granger, London, Oxford, 267--276.
-  
+
   Download possible at: \url{http://cowles.econ.yale.edu/}, see rubric
   'Discussion Papers (CFDPs)' and
   \url{http://www.econ.ucsd.edu/papers/files/90-4.pdf}.

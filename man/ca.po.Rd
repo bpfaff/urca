@@ -36,7 +36,7 @@ ca.po(z, demean = c("none", "constant", "trend"),
   Residual Based Tests for Cointegration, \emph{Econometrica},
   \bold{Vol. 58, No. 1}, 165--193.
 }
-  
+
 \seealso{\code{\link{ca.po-class}}}
 \examples{
 data(ecb)

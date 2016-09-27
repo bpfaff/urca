@@ -33,7 +33,7 @@ ur.ers <- function(y, type=c("DF-GLS", "P-test"), model=c("constant", "trend"), 
     trd <- 1:nobs
     za2 <- c(1, trd[2:nobs]-ahat*trd[1:(nobs-1)])
     yd.reg <- summary(lm(ya ~ -1 + za1 + za2))
-    yd <- y - coef(yd.reg)[1] - coef(yd.reg)[2]*trd 
+    yd <- y - coef(yd.reg)[1] - coef(yd.reg)[2]*trd
   }
   what <- function(x, z=y){
     z.l <-  z[1:(nobs-1)]

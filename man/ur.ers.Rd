@@ -3,7 +3,7 @@
 \encoding{latin1}
 \title{Elliott, Rothenberg \& Stock Unit Root Test}
 \description{
-  Performs the Elliott, Rothenberg \& Stock unit root test. 
+  Performs the Elliott, Rothenberg \& Stock unit root test.
 }
 \usage{
 ur.ers(y, type = c("DF-GLS", "P-test"), model = c("constant", "trend"),

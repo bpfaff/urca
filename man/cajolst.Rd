@@ -33,21 +33,21 @@ cajolst(x, trend = TRUE, K = 2, season = NULL)
   Returns an object of class \code{ca.jo}.
 }
 \references{
-  
+
   L\"utkepohl, H., Saikkonen, P. and Trenkler, C. (2004), Testing for the
   Cointegrating Rank of a VAR Process with Level Shift at Unknown Time,
   \emph{Econometrica}, \bold{Vol. 72, No. 2}, 647--662.
 
   Trenkler, Carsten (2003), A new set of critical values for systems
   cointegration tests with a prior adjustment for deterministic terms,
-  \emph{Economics Bulletin}, \bold{Vol. 3, No. 11}, 1--9. 
-  
+  \emph{Economics Bulletin}, \bold{Vol. 3, No. 11}, 1--9.
+
 }
 \seealso{
-  
+
   \code{\link{plotres}}, \code{\link{alrtest}}, \code{\link{ablrtest}},
   \code{\link{blrtest}}, \code{\link{ca.jo}}, \code{\link{cajools}},
-  \code{\link{lttest}}, \code{\link{ca.jo-class}} and \code{\link{urca-class}}. 
+  \code{\link{lttest}}, \code{\link{ca.jo-class}} and \code{\link{urca-class}}.
 }
 \examples{
 data(denmark)

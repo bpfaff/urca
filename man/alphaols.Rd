@@ -42,7 +42,7 @@ alphaols(z, reg.number = NULL)
 }
 \seealso{
   \code{\link{ca.jo}}, \code{\link[stats]{lm}}, \code{\link{ca.jo-class}}
-  and \code{\link{urca-class}}. 
+  and \code{\link{urca-class}}.
 }
 \examples{
 data(denmark)

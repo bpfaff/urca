@@ -1,4 +1,4 @@
-\name{Raotbl4} 
+\name{Raotbl4}
 \alias{Raotbl4}
 \encoding{latin1}
 \docType{data}
@@ -6,26 +6,26 @@
 \description{
   This data set contains the time series used by Pierre Perron in his
   article: ``Trend, Unit Root and Structural Change in Macroeconomic
-  Time Series". 
+  Time Series".
 }
 \usage{data(Raotbl4)}
 \format{
   A data frame on real aggregate output for various countries; annual
   data starting in 1870 until 1986.
-  
+
     \tabular{rl}{
     \code{aus} \tab Australia. \cr
     \code{can} \tab Canada. \cr
     \code{den} \tab Denmark. \cr
     \code{fin} \tab Finland. \cr
     \code{fra} \tab France. \cr
-    \code{ger} \tab Germany. 
+    \code{ger} \tab Germany.
   }
 
   For further details about the data see \emph{Notes} in the data
   appendix `Table D.5' of Rao, ``Cointegration for the Applied
   Economist".
-  
+
 }
 \source{
   Pierre Perron (1994), Trend, Unit Root and Structural Change in

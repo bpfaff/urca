@@ -18,7 +18,7 @@ ur.za(y, model = c("intercept", "trend", "both"), lag=NULL)
 \details{
   This test is based upon the recursive estimation of a test
   regression. The test statistic is defined as the minimum t-statistic
-  of the coeffcient of the lagged endogenous variable. 
+  of the coeffcient of the lagged endogenous variable.
 }
 \value{
   An object of class \code{ur.za}.

@@ -1,7 +1,7 @@
 ##
 ## cajolst
 ##
-cajolst <- function (x, trend = TRUE, K = 2, season = NULL) 
+cajolst <- function (x, trend = TRUE, K = 2, season = NULL)
 {
     x <- as.matrix(x)
     K <- as.integer(K)
@@ -17,9 +17,9 @@ cajolst <- function (x, trend = TRUE, K = 2, season = NULL)
     else {
         s <- 0
     }
-    if (N * P < P + s * P + K * P^2 + P * (P + 1)/2) 
+    if (N * P < P + s * P + K * P^2 + P * (P + 1)/2)
         stop("\nInsufficient degrees of freedom.\n")
-    if (P > 5) 
+    if (P > 5)
         warning("\nToo many variables, critical values cannot be computed.\n")
     if (!(is.null(season))) {
         dum <- (diag(season) - 1/season)[, -season]
@@ -30,7 +30,7 @@ cajolst <- function (x, trend = TRUE, K = 2, season = NULL)
         dums <- dums[1:N, ]
         if (NA %in% x) {
             idx.NA <- 1:N
-            ind <- as.logical(sapply(idx.NA, function(z) sum(is.na(x[z, 
+            ind <- as.logical(sapply(idx.NA, function(z) sum(is.na(x[z,
                 ]) * 1)))
             ind2 <- ind * (1:N)
             dums <- dums[-ind2, ]
@@ -130,7 +130,7 @@ cajolst <- function (x, trend = TRUE, K = 2, season = NULL)
     V <- sapply(1:P, function(x) V[, x]/V[1, x])
     W <- S0K %*% V %*% solve(t(V) %*% SKK %*% V)
     PI <- S0K %*% solve(SKK)
-    DELTA <- S00 - S0K %*% V %*% solve(t(V) %*% SKK %*% V) %*% 
+    DELTA <- S00 - S0K %*% V %*% solve(t(V) %*% SKK %*% V) %*%
         t(V) %*% SK0
     GAMMA <- M01 %*% M11inv - PI %*% MK1 %*% M11inv
     type <- "trace statistic"
@@ -161,10 +161,10 @@ cajolst <- function (x, trend = TRUE, K = 2, season = NULL)
     colnames(PI) <- colnames(W)
     colnames(R0) <- paste("R0", colnames(Z0), sep = ".")
     colnames(RK) <- paste("RK", colnames(ZK), sep = ".")
-    
-    new("ca.jo", x = x, Z0 = Z0, Z1 = Z1, ZK = ZK, type = type, model = model, ecdet = "none", lag = K, P = arrsel, 
-        season = season, dumvar = NULL, cval = cval, teststat = as.vector(teststat), 
-        lambda = lambda, Vorg = Vorg, V = V, W = W, PI = PI, 
-        DELTA = DELTA, GAMMA = GAMMA, R0 = R0, RK = RK, bp = tau.bp, 
+
+    new("ca.jo", x = x, Z0 = Z0, Z1 = Z1, ZK = ZK, type = type, model = model, ecdet = "none", lag = K, P = arrsel,
+        season = season, dumvar = NULL, cval = cval, teststat = as.vector(teststat),
+        lambda = lambda, Vorg = Vorg, V = V, W = W, PI = PI,
+        DELTA = DELTA, GAMMA = GAMMA, R0 = R0, RK = RK, bp = tau.bp,
         test.name = "Johansen-Procedure")
 }

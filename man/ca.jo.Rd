@@ -24,7 +24,7 @@ spec=c("longrun", "transitory"), season = NULL, dumvar = NULL)
     frequency must be set accordingly, \emph{i.e} \sQuote{4} for quarterly
     data.}
   \item{dumvar}{If dummy variables should be included, a matrix with
-    row dimension equal to \code{x} can be provided.} 
+    row dimension equal to \code{x} can be provided.}
 }
 
 \details{
@@ -75,10 +75,10 @@ spec=c("longrun", "transitory"), season = NULL, dumvar = NULL)
   \code{spec="transitory"} the second VECM form is estimated. Please note
   that inferences drawn on \eqn{\bold{\Pi}} will be the same, regardless
   which specification is choosen and that the explanatory power is the
-  same, too. 
+  same, too.
 
   If \code{"season"} is not NULL, centered seasonal dummy variables are
-  included. 
+  included.
 
   If \code{"dumvar"} is not NULL, a matrix of dummy variables is included
   in the VECM. Please note, that the number of rows of the matrix
@@ -87,7 +87,7 @@ spec=c("longrun", "transitory"), season = NULL, dumvar = NULL)
 
   Critical values are only reported for systems with less than
   11 variables and are taken from Osterwald-Lenum.
-  
+
 }
 
 \value{
@@ -116,10 +116,10 @@ spec=c("longrun", "transitory"), season = NULL, dumvar = NULL)
 }
 
 \seealso{
-  
+
   \code{\link{plotres}}, \code{\link{alrtest}}, \code{\link{ablrtest}},
   \code{\link{blrtest}}, \code{\link{cajolst}}, \code{\link{cajools}},
-  \code{\link{lttest}}, \code{\link{ca.jo-class}} and \code{\link{urca-class}}. 
+  \code{\link{lttest}}, \code{\link{ca.jo-class}} and \code{\link{urca-class}}.
 }
 \examples{
 data(denmark)

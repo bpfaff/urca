@@ -48,7 +48,7 @@ ur.sp <- function(y, type=c("tau", "rho"), pol.deg=c(1, 2, 3, 4), signif=c(0.01,
     omega2.hat <- sig.eps/sig
   }else if(pol.deg==3){
     trend2 <- trend1^2
-    trend3 <- trend1^3    
+    trend3 <- trend1^3
     S.hat <- c(0, cumsum(residuals(summary(lm(y.diff ~ trend1[2:n] + trend2[2:n])))))
     test.reg <- summary(lm(y.diff ~ S.hat[-n] + trend1[2:n] + trend2[2:n]))
     sp.data <- data.frame(cbind(y[2:n],  y[1:(n-1)], trend1[2:n], trend2[2:n], trend3[2:n]))

@@ -2,7 +2,7 @@
 			# R E A D M E #
 			###############
 
-The two files in the `/Rcmdr' directory of urca, namely `Rcmdr-urca.R' 
+The two files in the `/Rcmdr' directory of urca, namely `Rcmdr-urca.R'
 and `Rcmdr-menus.txt', can be utilisied as an add-in to `Rcmdr' of
 John Fox. For more information on `Rcmdr' please visit the URL:
 
@@ -24,12 +24,12 @@ Copy the `Rcmdr-urca.R' into the `/etc' sub-directory of the package
 ********
 Copy the contents of the file `Rcmdr-menus.txt' in the `urca/inst'
 directory into the file `Rcmdr/etc/Rcmdr-menus.txt' at a suitable
-place. For example, you can place the contents right before the 
+place. For example, you can place the contents right before the
 definition of the `Help-menu' (look for a line, similar to:
 
 	menu  helpMenu  topMenu   ""  ""  ""
 
 Then, the newly created `urca-menu' will be placed left to the
-`Help-menu' of `Rcmdr' once you executed: library(Rcmdr) from a 
+`Help-menu' of `Rcmdr' once you executed: library(Rcmdr) from a
 R Console.
 

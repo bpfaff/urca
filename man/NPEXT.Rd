@@ -11,9 +11,9 @@
 \usage{data(npext)}
 \format{
   A data frame containing fourteen series.
-		
+
   \tabular{rl}{
-    \code{year} \tab Time index from 1860 until 1988. \cr 
+    \code{year} \tab Time index from 1860 until 1988. \cr
     \code{realgnp} \tab Real GNP, [Billions of 1958 Dollars], \cr
     \tab [1909 -- 1988] \cr
     \code{nomgnp} \tab Nominal GNP, \cr
@@ -52,7 +52,7 @@
 
   Koop, G. and Steel, M.F.J. (1994), A Decision-Theoretic Analysis of
   the Unit-Root Hypothesis using Mixtures of Elliptical Models,
-  \emph{Journal of Business and Economic Statistics}, \bold{12}, 95--107. 
+  \emph{Journal of Business and Economic Statistics}, \bold{12}, 95--107.
 }
 \references{\url{http://www.amstat.org/publications/jbes/}}
 \author{Bernhard Pfaff}

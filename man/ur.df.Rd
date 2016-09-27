@@ -3,11 +3,11 @@
 \encoding{latin1}
 \title{Augmented-Dickey-Fuller Unit Root Test}
 \description{
-  Performs the augmented Dickey-Fuller unit root test. 
+  Performs the augmented Dickey-Fuller unit root test.
 }
 \usage{
 ur.df(y, type = c("none", "drift", "trend"), lags = 1,
-      selectlags = c("Fixed", "AIC", "BIC")) 
+      selectlags = c("Fixed", "AIC", "BIC"))
 }
 \arguments{
   \item{y}{Vector to be tested for a unit root.}
@@ -18,7 +18,7 @@ ur.df(y, type = c("none", "drift", "trend"), lags = 1,
     Akaike \code{"AIC"} or the Bayes \code{"BIC"} information
     criteria. The maximum number of lags considered is set by
     \code{lags}. The default is to use a \code{"fixed"} lag length set
-    by \code{lags}.} 
+    by \code{lags}.}
 }
 \details{
   The function \code{ur.df()} computes the augmented Dickey-Fuller
@@ -40,7 +40,7 @@ ur.df(y, type = c("none", "drift", "trend"), lags = 1,
   Dickey, D. A. and Fuller, W. A. (1981), Likelihood Ratio Statistics
   for Autoregressive Time Series with a Unit Root, \emph{Econometrica},
   \bold{49}, 1057--1072.
-  
+
   Hamilton (1994), \emph{Time Series Analysis}, Princeton University Press.
 }
 \seealso{\code{\link{ur.df-class}}.}

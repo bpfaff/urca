@@ -24,7 +24,7 @@
   Inference on Cointegration -- with Applications to the Demand for
   Money, \emph{Oxford Bulletin of Economics and Statistics}, \bold{52,
     2}, 169--210.
-  
+
 }
 \references{
   \url{http://www.math.ku.dk/~sjo/}

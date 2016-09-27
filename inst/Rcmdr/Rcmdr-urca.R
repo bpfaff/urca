@@ -62,9 +62,9 @@ urcaers <- function(){
     tkfocus(CommanderWindow())
   }
   OKCancelHelp(helpSubject="ur.ers")
-  radioButtons(name="testtype", buttons=c("DFGLS", "Ptest"), values=c("'DF-GLS'", "'P-test'"), 
+  radioButtons(name="testtype", buttons=c("DFGLS", "Ptest"), values=c("'DF-GLS'", "'P-test'"),
                labels=c("DF-GLS statistic", "P-test statistic"), title="Type of test")
-  radioButtons(name="model", buttons=c("const", "trend"), values=c("'constant'", "'trend'"), 
+  radioButtons(name="model", buttons=c("const", "trend"), values=c("'constant'", "'trend'"),
                labels=c("Include constant", "Include constant + trend"), title="Model type")
   rightFrame <- tkframe(top)
   lagsFrame <- tkframe(rightFrame)
@@ -88,10 +88,10 @@ urcakpss <- function(){
   if (!checkNumeric(n=1)) return()
   initializeDialog(title="KPSS Test")
   xBox <- variableListBox(top, Numeric(), title="Variable (pick one)")
-  radioButtons(name="testtype", buttons=c("constant", "trend"), 
-        values=c("'mu'", "'tau'"), initialValue="'mu'", 
+  radioButtons(name="testtype", buttons=c("constant", "trend"),
+        values=c("'mu'", "'tau'"), initialValue="'mu'",
         labels=c("Include constant", "Include trend"), title="Deterministic Part")
-  radioButtons(name="lags", buttons=c("short", "long", "nil"), 
+  radioButtons(name="lags", buttons=c("short", "long", "nil"),
         values=c("'short'", "'long'", "'nil'"), initialValue="'short'",         labels=c("use short lags", "use long lags", "use no lags"), title="Lag Selection")
   onOK <- function(){
     x <- getSelection(xBox)
@@ -139,11 +139,11 @@ urcasp <- function(){
     tkfocus(CommanderWindow())
   }
   OKCancelHelp(helpSubject="ur.sp")
-  radioButtons(name="testtype", buttons=c("tau", "rho"), values=c("'tau'", "'rho'"), 
+  radioButtons(name="testtype", buttons=c("tau", "rho"), values=c("'tau'", "'rho'"),
                labels=c("tau statistic", "rho statistic"), title="Type of test")
-  radioButtons(name="poldeg", buttons=c("pb1", "pb2", "pb3", "pb4"), values=c("1", "2", "3", "4"), 
+  radioButtons(name="poldeg", buttons=c("pb1", "pb2", "pb3", "pb4"), values=c("1", "2", "3", "4"),
                labels=c("1st", "2nd", "3rd", "4th"), title="Select pol. degree")
-  radioButtons(name="signif", buttons=c("sb1", "sb5", "sb10"), values=c("0.01", "0.05", "0.1"), 
+  radioButtons(name="signif", buttons=c("sb1", "sb5", "sb10"), values=c("0.01", "0.05", "0.1"),
                labels=c("alpha=1%", "alpha=5%", "alpha=10%"), title="Sig. Level")
   tkgrid(getFrame(xBox), testtypeFrame, sticky="nw")
   tkgrid(poldegFrame, signifFrame, sticky="nw")
@@ -175,11 +175,11 @@ urcapp <- function(){
     tkfocus(CommanderWindow())
   }
   OKCancelHelp(helpSubject="ur.pp")
-  radioButtons(name="testtype", buttons=c("Zalpha", "Ztau"), values=c("'Z-alpha'", "'Z-tau'"), 
+  radioButtons(name="testtype", buttons=c("Zalpha", "Ztau"), values=c("'Z-alpha'", "'Z-tau'"),
                labels=c("Z-alpha statistic", "Z-tau statistic"), title="Type of test")
-  radioButtons(name="model", buttons=c("const", "trend"), values=c("'constant'", "'trend'"), 
+  radioButtons(name="model", buttons=c("const", "trend"), values=c("'constant'", "'trend'"),
                labels=c("Include constant", "include constant + trend"), title="Model type")
-  radioButtons(name="lags", buttons=c("short", "long"), values=c("'short'", "'long'"), 
+  radioButtons(name="lags", buttons=c("short", "long"), values=c("'short'", "'long'"),
                labels=c("short lags", "long lags"), title="Lags for error correction")
   tkgrid(getFrame(xBox), testtypeFrame, sticky="nw")
   tkgrid(modelFrame, lagsFrame, sticky="nw")
@@ -214,13 +214,13 @@ urcaza <- function(){
       justDoIt("x11()")
       justDoIt("plot(ZAstat)")
     }
-    logger("remove(ZAstat)") 
-    remove(ZAstat, envir=.GlobalEnv)       
+    logger("remove(ZAstat)")
+    remove(ZAstat, envir=.GlobalEnv)
     tkdestroy(top)
     tkfocus(CommanderWindow())
   }
   OKCancelHelp(helpSubject="ur.za")
-  radioButtons(name="model", buttons=c("const", "trend", "both"), values=c("'intercept'", "'trend'", "'both'"), 
+  radioButtons(name="model", buttons=c("const", "trend", "both"), values=c("'intercept'", "'trend'", "'both'"),
                labels=c("Include constant", "Include trend", "Include both"), title="Model type")
   checkBoxes(frame="plotFrame", boxes="plot", initialValues="0", labels="Plot path of Zivot & Andrews Statistic?")
   rightFrame <- tkframe(top)
@@ -266,11 +266,11 @@ urcacapo <- function(){
     tkfocus(CommanderWindow())
   }
   OKCancelHelp(helpSubject="ca.po")
-  radioButtons(name="demean", buttons=c("none", "constant", "trend"), values=c("'none'", "'constant'", "'trend'"), 
+  radioButtons(name="demean", buttons=c("none", "constant", "trend"), values=c("'none'", "'constant'", "'trend'"),
                labels=c("None", "Include constant", "Include trend"), title="Demean?")
-  radioButtons(name="lags", buttons=c("short", "long"), values=c("'short'", "'long'"), 
+  radioButtons(name="lags", buttons=c("short", "long"), values=c("'short'", "'long'"),
                labels=c("short lags", "long lags"), title="Lags for error correction")
-  radioButtons(name="type", buttons=c("Pu", "Pz"), values=c("'Pu'", "'Pz'"), 
+  radioButtons(name="type", buttons=c("Pu", "Pz"), values=c("'Pu'", "'Pz'"),
                labels=c("Pu statistic", "Pz statistic"), title="Type of test")
   rightFrame <- tkframe(top)
   tolFrame <- tkframe(rightFrame)
@@ -339,14 +339,14 @@ urcacajo <- function(){
     tkfocus(CommanderWindow())
   }
   OKCancelHelp(helpSubject="ca.jo")
-  radioButtons(name="type", buttons=c("eigen", "trace"), values=c("'eigen'", "'trace'"), 
+  radioButtons(name="type", buttons=c("eigen", "trace"), values=c("'eigen'", "'trace'"),
                labels=c("Eigenvalue statistic", "Trace statistic"), title="Type of statistic")
-  radioButtons(name="spec", buttons=c("long", "trans"), values=c("'longrun'", "'transitory'"), 
+  radioButtons(name="spec", buttons=c("long", "trans"), values=c("'longrun'", "'transitory'"),
                labels=c("longrun specification", "transitory specification"), title="VECM specification")
-  radioButtons(name="season", buttons=c("none", "monthly", "quarterly"), values=c("NULL", "12", "4"), 
+  radioButtons(name="season", buttons=c("none", "monthly", "quarterly"), values=c("NULL", "12", "4"),
                labels=c("None", "Monthly seasonality", "Quarterly seasonality"), title="Seasonality")
-  radioButtons(name="ecdet", buttons=c("none", "const", "trend"), values=c("'none'", "'const'", "'trend'"), 
-               labels=c("none", "constant", "trend"), title="Deterministic Variable in Cointegration") 
+  radioButtons(name="ecdet", buttons=c("none", "const", "trend"), values=c("'none'", "'const'", "'trend'"),
+               labels=c("none", "constant", "trend"), title="Deterministic Variable in Cointegration")
   rightFrame <- tkframe(top)
   lagFrame <- tkframe(rightFrame)
   lagVariable <- tclVar("2")
@@ -723,7 +723,7 @@ urcacajolst <- function(){
     tkfocus(CommanderWindow())
   }
   OKCancelHelp(helpSubject="cajolst")
-  radioButtons(name="season", buttons=c("none", "monthly", "quarterly"), values=c("NULL", "12", "4"), 
+  radioButtons(name="season", buttons=c("none", "monthly", "quarterly"), values=c("NULL", "12", "4"),
                labels=c("None", "Monthly seasonality", "Quarterly seasonality"), title="Seasonality")
   checkBoxes(frame="trendFrame", boxes="trend", initialValues="1", labels="Include linear trend in the auxiliary regressions?")
   lagFrame <- tkframe(top)

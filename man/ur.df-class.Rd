@@ -34,7 +34,7 @@ Class \code{urca}, directly.
 \section{Methods}{
   Type \code{showMethods(classes="ur.df")} at the R prompt for a
   complete list of methods which are available for this class.
-  
+
   Useful methods include
   \describe{
     \item{\code{show}:}{test statistic.}
@@ -47,7 +47,7 @@ Class \code{urca}, directly.
   Dickey, D. A. and Fuller, W. A. (1979), Distributions of the
   Estimators For Autoregressive Time Series with a Unit Root,
   \emph{Journal of the American Statistical Association},  \bold{75}, 427--431.
-  
+
   Dickey, D. A. and Fuller, W. A. (1981), Likelihood Ratio Statistics
   for Autoregressive Time Series with a Unit Root, \emph{Econometrica},
   \bold{49}, 1057--1072.

@@ -12,7 +12,7 @@
 \format{
   A data frame of quarterly data ranging from 1971:Q1
   until 1987:Q2. All variables are expressed in logarithms.
- 
+
 
     \tabular{rl}{
     \code{p1} \tab UK wholesale price index. \cr
@@ -28,7 +28,7 @@
   Johansen, S. and K. Juselius (1992), Testing structural hypothesis in
   a multivariate cointegration analysis of the PPP and UIP for UK,
   Journal of Econometrics, 53, 211-244.
- 
+
 }
 \author{Bernhard Pfaff}
 \keyword{datasets}

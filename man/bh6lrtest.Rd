@@ -25,7 +25,7 @@ bh6lrtest(z, H, r, r1, conv.val = 0.0001, max.iter = 50)
   \item{r1}{The count of cointegrating relationships in the first
     partition of the cointegration space; \cr}
   \item{conv.val}{The convergence value of the algorithm. (see details); \cr}
-  \item{max.iter}{The maximal number of iterations.} 
+  \item{max.iter}{The maximal number of iterations.}
 }
 
 \details{
@@ -51,7 +51,7 @@ multivariate cointegration analysis of the PPP and the UIP for UK,
 \seealso{
   \code{\link{ca.jo}}, \code{\link{alrtest}}, \code{\link{ablrtest}},
   \code{\link{blrtest}}, \code{\link{bh5lrtest}}, \code{\link{cajo.test-class}},
-  \code{\link{ca.jo-class}} and \code{\link{urca-class}}. 
+  \code{\link{ca.jo-class}} and \code{\link{urca-class}}.
 }
 \examples{
 data(UKpppuip)

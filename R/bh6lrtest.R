@@ -1,7 +1,7 @@
 ##
 ## bh6lrtest
 ##
-bh6lrtest <- function (z, H, r, r1, conv.val=0.0001, max.iter=50) 
+bh6lrtest <- function (z, H, r, r1, conv.val=0.0001, max.iter=50)
 {
     if (!(class(z) == "ca.jo")) {
         stop("\nPlease, provide object of class 'ca.jo' as 'z'.\n")

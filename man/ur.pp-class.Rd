@@ -38,7 +38,7 @@ Class \code{urca}, directly.
 \section{Methods}{
   Type \code{showMethods(classes="ur.pp")} at the R prompt for a
   complete list of methods which are available for this class.
-  
+
   Useful methods include
   \describe{
     \item{\code{show}:}{test statistic.}
@@ -55,7 +55,7 @@ Class \code{urca}, directly.
   MacKinnon, J.G. (1991), Critical Values for Cointegration Tests,
   \emph{Long-Run Economic Relationships}, eds. R.F. Engle and
   C.W.J. Granger, London, Oxford, 267--276.
-  
+
   Download possible at: \url{http://cowles.econ.yale.edu/}, see rubric
   'Discussion Papers (CFDPs)' and
   \url{http://www.econ.ucsd.edu/papers/files/90-4.pdf}.

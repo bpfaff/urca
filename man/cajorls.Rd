@@ -24,12 +24,12 @@ cajorls(z, r = 1, reg.number = NULL)
 }
 \details{
  The cointegration space is normalised as \eqn{\bold{\beta}_c =
-   \bold{\beta}(S'\bold{\beta})^{-1}}, with \eqn{S' = (I_r, 0)}. 
+   \bold{\beta}(S'\bold{\beta})^{-1}}, with \eqn{S' = (I_r, 0)}.
 }
 \value{
   Returns a list object with elements of class \code{lm} for the
   restricted VECM and a matrix object with the normalised cointegrating
-  vectors. 
+  vectors.
 }
 \references{
 
@@ -42,7 +42,7 @@ cajorls(z, r = 1, reg.number = NULL)
 }
 \seealso{
   \code{\link{ca.jo}}, \code{\link{cajools}}, \code{\link[stats]{lm}},
-  \code{\link{ca.jo-class}} and \code{\link{urca-class}}. 
+  \code{\link{ca.jo-class}} and \code{\link{urca-class}}.
 }
 \examples{
 data(finland)

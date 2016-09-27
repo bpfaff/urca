@@ -1,4 +1,4 @@
-\name{Raotbl5} 
+\name{Raotbl5}
 \alias{Raotbl5}
 \encoding{latin1}
 \docType{data}
@@ -6,13 +6,13 @@
 \description{
   This data set contains the time series used by Pierre Perron in his
   article: ''Trend, Unit Root and Structural Change in Macroeconomic
-  Time Series". 
+  Time Series".
 }
 \usage{data(Raotbl5)}
 \format{
   A data frame on real aggregate output for various countries; annual
   data starting in 1870 until 1986.
-  
+
     \tabular{rl}{
     \code{ita} \tab Italy. \cr
     \code{nor} \tab Norway. \cr

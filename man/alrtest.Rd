@@ -37,11 +37,11 @@ alrtest(z, A, r)
   Johansen, S. (1991), Estimation and Hypothesis Testing of
   Cointegration Vectors in Gaussian Vector Autoregressive Models,
   \emph{Econometrica}, \bold{Vol. 59, No. 6}, 1551--1580.
-}   
+}
 \seealso{
   \code{\link{ca.jo}}, \code{\link{blrtest}}, \code{\link{ablrtest}},
   \code{\link{cajo.test-class}}, \code{\link{ca.jo-class}} and
-  \code{\link{urca-class}}. 
+  \code{\link{urca-class}}.
 }
 \examples{
 data(denmark)

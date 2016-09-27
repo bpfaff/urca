@@ -69,7 +69,7 @@ ca.jo <- function(x, type = c("eigen", "trace"), ecdet = c("none", "const", "tre
     }
   }
   ##
-  ## Setting trend 
+  ## Setting trend
   ## (if applicable)
   ##
   if(ecdet == "trend"){
@@ -235,7 +235,7 @@ ca.jo <- function(x, type = c("eigen", "trace"), ecdet = c("none", "const", "tre
     }
   }
   colnames(V) <- colnames(ZK)
-  rownames(V) <- colnames(ZK) 
+  rownames(V) <- colnames(ZK)
   rownames(W) <- paste(colnames(x), ".d", sep = "")
   colnames(W) <- colnames(ZK)
   colnames(Vorg) <- colnames(V)
@@ -247,5 +247,5 @@ ca.jo <- function(x, type = c("eigen", "trace"), ecdet = c("none", "const", "tre
   colnames(RK) <- paste("RK", colnames(ZK), sep=".")
   rownames(GAMMA) <- rownames(W)
 
-  new("ca.jo", x = x, Z0 = Z0, Z1 = Z1, ZK = ZK, type = type, model = model, ecdet = ecdet, lag = K, P = arrsel, season = season, dumvar = dumvar, cval = cval, teststat = as.vector(teststat), lambda = lambda, Vorg = Vorg, V = V, W = W, PI = PI, DELTA = DELTA, GAMMA = GAMMA, R0 = R0, RK = RK, bp = NA, test.name = "Johansen-Procedure", spec = spec, call = match.call())  
+  new("ca.jo", x = x, Z0 = Z0, Z1 = Z1, ZK = ZK, type = type, model = model, ecdet = ecdet, lag = K, P = arrsel, season = season, dumvar = dumvar, cval = cval, teststat = as.vector(teststat), lambda = lambda, Vorg = Vorg, V = V, W = W, PI = PI, DELTA = DELTA, GAMMA = GAMMA, R0 = R0, RK = RK, bp = NA, test.name = "Johansen-Procedure", spec = spec, call = match.call())
 }

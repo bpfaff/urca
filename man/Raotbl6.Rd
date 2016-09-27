@@ -1,4 +1,4 @@
-\name{Raotbl6} 
+\name{Raotbl6}
 \alias{Raotbl6}
 \encoding{latin1}
 \docType{data}
@@ -6,12 +6,12 @@
 \description{
   This data set contains quarterly data for the U.S.A. in Yash
   P. Mehra's article: ``Wage Growth and the Inflation Process: An
-  Empirical Approach" for his wage-price equations. 
+  Empirical Approach" for his wage-price equations.
 }
 \usage{data(Raotbl6)}
 \format{
-  A data frame with quarterly data from 1959:1 until 1989:3. 
-  
+  A data frame with quarterly data from 1959:1 until 1989:3.
+
     \tabular{rl}{
     \code{rgnp} \tab Real GNP. \cr
     \code{pgnp} \tab Potential real GNP. \cr
@@ -23,12 +23,12 @@
     \code{gdfcf} \tab Fixed weight deflator for food in personal consumption
     expenditure.  \cr
     \code{gdfce} \tab Fixed weight deflator for energy in personal
-    consumption expenditure. 
+    consumption expenditure.
   }
 
   Further details about the data can be found in the data appendix of
   Rao, ``Cointegration for the Applied Economist".
-  
+
 }
 \source{
   Yash P. Mehra (1994), Wage Growth and the Inflation Process: An
